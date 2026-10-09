@@ -45,8 +45,16 @@ export function RegisterForm({ redirectTo }: { redirectTo: string }) {
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <FormError message={error} />
-      <FormField label="Full name" name="name" autoComplete="name" required />
-      <FormField label="Email" name="email" type="email" autoComplete="email" required />
+      <FormField label="Full name" name="name" autoComplete="name" icon="user" required />
+      <FormField
+        label="Email"
+        name="email"
+        type="email"
+        autoComplete="email"
+        icon="mail"
+        placeholder="you@example.com"
+        required
+      />
       <PasswordField
         label="Password"
         name="password"

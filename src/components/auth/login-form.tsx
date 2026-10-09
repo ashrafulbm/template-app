@@ -42,16 +42,17 @@ export function LoginForm({ redirectTo }: { redirectTo: string }) {
         name="email"
         type="email"
         autoComplete="email"
+        icon="mail"
         placeholder="you@example.com"
         required
       />
       <PasswordField label="Password" name="password" autoComplete="current-password" required />
-      <label className="flex items-center gap-2.5 text-sm text-slate-700 dark:text-slate-300">
+      <label className="flex w-fit cursor-pointer select-none items-center gap-2.5 text-sm text-slate-600 dark:text-slate-400">
         <input
           type="checkbox"
           name="rememberMe"
           defaultChecked
-          className="size-4 rounded border-slate-300 accent-blue-600"
+          className="size-4 cursor-pointer rounded accent-blue-600"
         />
         Keep me logged in
       </label>

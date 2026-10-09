@@ -23,7 +23,7 @@ export default async function LoginPage({
   return (
     <AuthShell
       title="Welcome back"
-      subtitle="Log in with the email and password you registered with."
+      subtitle="Log in to your account to continue."
       footer={
         <>
           New here?{" "}
