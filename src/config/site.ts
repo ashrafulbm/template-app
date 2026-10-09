@@ -6,4 +6,5 @@ export const siteConfig = {
   afterLoginPath: "/dashboard",
   // Where users go when they need to log in
   loginPath: "/login",
+  demo: "its a test"
 };
